@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-executable;application/x-shellscript;inode/directory;
+Actions=CreateUmuShortcut;RunWithUmu;
+X-KDE-Priority=TopLevel
+
+[Desktop Action CreateUmuShortcut]
+Name=Create Umu Shortcut Here
+Icon=document-save
+Exec=bash -c 'for file in "$@"; do dir="$(dirname "$file")"; name="$(basename "$file")"; shortcut="$dir/umu-${name}.desktop"; echo -e "[Desktop Entry]\\nName=Run ${name} with Umu\\nExec=env GAMEID=UmuDolphinService PROTONPATH=GE-Proton umu-run \\"${file}\\" \\nIcon=applications-games\\nTerminal=false\\nType=Application\\nCategories=Game;" > "$shortcut"; chmod +x "$shortcut"; done' dummy %F
+
+[Desktop Action RunWithUmu]
+Name=Run with Umu
+Icon=applications-games
+Exec=bash -c 'GAMEID=UmuDolphinService PROTONPATH=GE-Proton umu-run "$@"' dummy %F
