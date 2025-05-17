@@ -1,6 +1,6 @@
 # UMU Dolphin Service
 
-This service/script makes it possible to run games and other Windows executables via umu, by using the right click context menu in KDE Plasma 6's Dolphin file browser.
+This service/script makes it possible to run games and other Windows executables via umu and GE-Proton, by using the right click context menu in KDE Plasma 6's Dolphin file browser.
 
 In addition, it can create a shortcut which can be moved (to the desktop for example) or renamed at will, to make subsequent launches easier.
 
