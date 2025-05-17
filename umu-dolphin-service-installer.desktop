@@ -1,0 +1,6 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Install Umu Dolphin Service
+Exec=bash -c 'mkdir -p $HOME/.local/share/kio/servicemenus/; wget -O $HOME/.local/share/kio/servicemenus/umu-dolphin.desktop https://github.com/telqor/umu-dolphin-service/raw/refs/heads/main/umu-dolphin.desktop; chmod +x $HOME/.local/share/kio/servicemenus/umu-dolphin.desktop; kdialog --msgbox "Umu Dolphin service installation complete!"'
+Icon=system-software-install
+Type=Application
