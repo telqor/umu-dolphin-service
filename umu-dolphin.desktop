@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Service
 X-KDE-ServiceTypes=KonqPopupMenu/Plugin
-MimeType=application/x-executable;application/x-shellscript;inode/directory;
+MimeType=application/x-ms-dos-executable;
 Actions=CreateUmuShortcut;RunWithUmu;
 X-KDE-Priority=TopLevel
 
